@@ -54,7 +54,7 @@ class vehiculo(object):
 		
 		
 	def mostrar_detalles(self):
-		return 'Las caracteristicas del vehiculo son: \nModelo: '+str(self.modelo)+'\nCilindraje del motor: '+str(self.cilindraje)+'\nNumero de ejes: '+str(self.n_ejes) 
+		return 'Las caracteristicas del vehiculo son: \n\nModelo: '+str(self.modelo)+'\nCilindraje del motor: '+str(self.cilindraje)+'\nNumero de ejes: '+str(self.n_ejes) 
 	def arrancar(self):
 		return 'El Vehiculo '+str(self.modelo)+'arrancara en 15 minutos, por favor abordar el vehiculo.'
 	def acelerar(self):
@@ -70,7 +70,7 @@ class vehiculo_aereo(vehiculo):
 		self.n_alerones=n_alerones
 	
 	def mostrar_detalles(self):
-		return 'Las caracteristicas del vehiculo aereo son: \nModelo: ' +str(self.modelo)+ '\nCilindraje: ' +str(self.cilindraje)+ '\nNumero de ejes: '+str(self.n_ejes)+'\nNumero de alas: '+str(self.n_alas)+'\nNumero de alerones: '+str(self.n_alerones)
+		return 'Las caracteristicas del vehiculo aereo son: \n\nModelo: ' +str(self.modelo)+ '\nCilindraje: ' +str(self.cilindraje)+ '\nNumero de ejes: '+str(self.n_ejes)+'\nNumero de alas: '+str(self.n_alas)+'\nNumero de alerones: '+str(self.n_alerones)
 	def despegar(self):
 		return 'El vehiculo aereo '+str(self.modelo)+'esta poniendo sus ' +str(self.cilindraje)+ ' caballos de fuerza en funcionamiento, por favor no ubicarse en ninguna de sus ' +str(self.n_alas)+ ' alas.'
 	def aterrizar(self):
@@ -82,7 +82,7 @@ class vehiculo_espacial(vehiculo_aereo):
 		vehiculo_aereo.__init__(self,modelo,cilindraje,n_ejes,n_alas,n_alerones)
 		self.n_cohetes=n_cohetes		
 	def mostrar_detalles(self):
-		return 'Las caracteristicas del vehiculo Espacial son: \nModelo: ' +str(self.modelo)+'\nCilindraje: '+str(self.cilindraje)+'\nNumero de ejes: '+str(self.n_ejes)+'\nNumero de alas: '+str(self.n_alas)+'\nNumero de alerones: '+str(self.n_alerones)+'\nNumero de cohetes: '+str(self.n_cohetes)
+		return 'Las caracteristicas del vehiculo Espacial son: \n\nModelo: ' +str(self.modelo)+'\nCilindraje: '+str(self.cilindraje)+'\nNumero de ejes: '+str(self.n_ejes)+'\nNumero de alas: '+str(self.n_alas)+'\nNumero de alerones: '+str(self.n_alerones)+'\nNumero de cohetes: '+str(self.n_cohetes)
 	def despegar(self):
 		return 'El vehiculo espacial ' +str(self.modelo)+ 'esta encendiendo sus motores y poniendo en marcha sus '+str(self.cilindraje)+' caballos de fuerza, por favor no ubicarse en ninguna de sus ' +str(self.n_alas)+ ' alas para evitar inconvenientes, mantengase alejado de los cohetes, los '+str(self.n_cohetes)+ ' estan a punto de encenderse.'
 	def planear(self):
@@ -91,7 +91,7 @@ class vehiculo_espacial(vehiculo_aereo):
 		return 'El vehiculo espacial ' +str(self.modelo)+ 'esta por aterrizar en Marte, sus ' +str(self.n_cohetes)+ ' cohetes estan apagandose, por favor cuiden sus pertenencias aun no conocemos las intenciones de los marcianos.'
 	
 
-#-------------------------------------------------------------------Fin Definicion De Funciones-------------------------------------------------------------------#
+#---------------------------------------------------------------Fin Definicion De Clases y Clases Heredadas-------------------------------------------------------------------#
 
 
 
@@ -135,29 +135,29 @@ n_ejes = int(caracteristicas_vehiculo[3][1])
 
 #Si el tipo de vehiculo es vehiculo
 if (tipo == "vehiculo"):
-	print "\nEl vehiculo es de tipo: Vehiculo" 
+	print "\n---------El vehiculo es de tipo: Vehiculo---------\n" 
 	v1 = vehiculo (modelo,cilindraje,n_ejes)
-	print v1.mostrar_detalles()
-	print v1.arrancar()
-	print v1.acelerar()
+	print v1.mostrar_detalles() + "\n"
+	print v1.arrancar() + "\n"
+	print v1.acelerar() + "\n"
 	print v1.apagar()
 
 #Si el tipo de vehiculo es aereo, heredara caracteristicas de vehiculo.	
 if (tipo == "vehiculo_aereo"):
-	print "\nEl vehiculo es de tipo: Aereo" 
+	print "\n-------El vehiculo es de tipo: Aereo---------\n" 
 	
 	n_alas = int(caracteristicas_vehiculo[4][1])
 	n_alerones = int(caracteristicas_vehiculo[5][1])
 	v1 = vehiculo(modelo,cilindraje,n_ejes)
 	va1 = vehiculo_aereo(v1.modelo,v1.cilindraje,v1.n_ejes, n_alas,n_alerones)
 	
-	print va1.mostrar_detalles()
-	print va1.despegar()
-	print va1.aterrizar()
+	print va1.mostrar_detalles() + '\n'
+	print va1.despegar() + '\n'
+	print va1.aterrizar() + '\n'
 
 #Si el tipo de vehiuclo es espacial, heredara caracteristicas de vehiculo aereo y de vehiculo.
 if (tipo == "vehiculo_espacial"):
-	print "\nEl vehiculo es de tipo: Espacial"
+	print "\n---------El vehiculo es de tipo: Espacial---------\n"
 	
 	n_alas = int(caracteristicas_vehiculo[4][1])
 	n_alerones = int(caracteristicas_vehiculo[5][1])
@@ -166,8 +166,8 @@ if (tipo == "vehiculo_espacial"):
 	v1 = vehiculo(modelo,cilindraje,n_ejes)
 	va1 = vehiculo_aereo(v1.modelo,v1.cilindraje,v1.n_ejes, n_alas,n_alerones)
 	ve1 = vehiculo_espacial(v1.modelo,v1.cilindraje,v1.n_ejes,va1.n_alas,va1.n_alerones,n_cohetes)
-	print ve1.mostrar_detalles()
-	print ve1.despegar()
-	print ve1.planear()
-	print ve1.aterrizar()
+	print ve1.mostrar_detalles() + '\n'
+	print ve1.despegar() + '\n'
+	print ve1.planear()  + '\n'
+	print ve1.aterrizar() 
 #-----------------------------------------------------------Fin Logica De Programa---------------------------------------------------------------------#

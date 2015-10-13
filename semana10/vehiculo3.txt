@@ -1,6 +1,10 @@
-tipo=vehiculo_aereo
-modelo=ZM1
-cilindraje=15700
-n_ejes=1
+tipo=vehiculo_espacial
+modelo=C115
+n_ejes=5
+cc_motor=10000
 n_alas=2
-n_alerones=4
+n_alerones=3
+flaps=6
+n_cohetes=2
+capac_astro=5
+tamano_tanque=5000

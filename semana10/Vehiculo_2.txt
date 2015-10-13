@@ -1,0 +1,7 @@
+tipo=vehiculo_espacial
+modelo=2k34
+cilindraje=500000
+n_ejes=3
+n_alas=2
+n_alerones=4
+n_cohetes=6

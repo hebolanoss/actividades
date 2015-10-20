@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="Ventana_principal">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="Marco">
+      <item>
+       <widget class="QTabWidget" name="Tabla_Horario_InfPersonal">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="Horario">
+         <attribute name="title">
+          <string>Horario</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <layout class="QVBoxLayout" name="Marco_sub1">
+            <item>
+             <layout class="QHBoxLayout" name="Marco_sub2">
+              <item>
+               <layout class="QVBoxLayout" name="Columna1">
+                <item>
+                 <widget class="QLabel" name="label">
+                  <property name="text">
+                   <string>HORA</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_9">
+                  <property name="text">
+                   <string>7:00 - 9:00</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_12">
+                  <property name="text">
+                   <string>9:00 - 11:00</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_14">
+                  <property name="text">
+                   <string>11:00 - 13:00</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_13">
+                  <property name="text">
+                   <string>2:00 - 4:00</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_10">
+                  <property name="text">
+                   <string>4:00 - 6:00</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_11">
+                  <property name="text">
+                   <string>6:00 - 8:00</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="Columna2">
+                <item>
+                 <widget class="QLabel" name="label_2">
+                  <property name="text">
+                   <string>LUNES</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_26"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_25"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_28"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_24"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_22"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_23"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="Columna3">
+                <item>
+                 <widget class="QLabel" name="label_3">
+                  <property name="text">
+                   <string>MARTES</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_35"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_29"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_32"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_33"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_34"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_30"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="Columna4">
+                <item>
+                 <widget class="QLabel" name="label_4">
+                  <property name="text">
+                   <string>MIERCOLES</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_13"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_12"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_11"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_10"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_9"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_8"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="Columna5">
+                <item>
+                 <widget class="QLabel" name="label_8">
+                  <property name="text">
+                   <string>JUEVES</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_39"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_21"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_27"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_31"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_14"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_7"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="Columna6">
+                <item>
+                 <widget class="QLabel" name="label_5">
+                  <property name="text">
+                   <string>VIERNES</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_46"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_45"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_44"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_48"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_49"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_43"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="Columna7">
+                <item>
+                 <widget class="QLabel" name="label_6">
+                  <property name="text">
+                   <string>SABADO</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_37"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_41"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_42"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_38"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_40"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_36"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="Columna8">
+                <item>
+                 <widget class="QLabel" name="label_7">
+                  <property name="text">
+                   <string>DOMINGO</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_20"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_19"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_18"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_17"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_16"/>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_15"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="Inf_Personal">
+         <attribute name="title">
+          <string>Inf. Personal</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <layout class="QVBoxLayout" name="Marco_sub3">
+            <item>
+             <layout class="QFormLayout" name="Cuadro_de_info">
+              <property name="fieldGrowthPolicy">
+               <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+              </property>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_15">
+                <property name="text">
+                 <string>Docente :</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="lineEdit"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_16">
+                <property name="text">
+                 <string>Area :</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="lineEdit_5"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_17">
+                <property name="text">
+                 <string>Asignaturas :</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="lineEdit_4"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_18">
+                <property name="text">
+                 <string>Horas semanales :</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="lineEdit_2"/>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_19">
+                <property name="text">
+                 <string>Grupos a cargo:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QLineEdit" name="lineEdit_3"/>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="label_20">
+                <property name="text">
+                 <string>   Semana Actual :</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0">
+               <widget class="QLabel" name="label_21">
+                <property name="text">
+                 <string>Horas dictadas:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="1">
+               <widget class="QLabel" name="label_24">
+                <property name="text">
+                 <string>&quot;X horas&quot;</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="0">
+               <widget class="QLabel" name="label_22">
+                <property name="text">
+                 <string>Horas restantes:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="1">
+               <widget class="QLabel" name="label_23">
+                <property name="text">
+                 <string>&quot;Y horas&quot;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_15"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_13">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_16">
+              <item>
+               <widget class="QPushButton" name="pushButton">
+                <property name="text">
+                 <string>Click para ver detalles</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

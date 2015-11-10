@@ -1,0 +1,4 @@
+tipo=vehiculo
+modelo=GTR-24
+cilindraje=4500
+n_ejes=2
